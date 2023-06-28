@@ -1,0 +1,10 @@
+DROP SCHEMA IF EXISTS books_api;
+CREATE SCHEMA IF NOT EXISTS books_api;
+
+CREATE TABLE books_api.books (
+  id INTEGER AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  title TEXT NOT NULL,
+  price INT NOT NULL,
+  author TEXT NOT NULL,
+  isbn TEXT NOT NULL
+);
